@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.779">
+<testcase classname="To test End to End Book Store API" name="To test an authenticated user is able to add a book from book store and delete it later" time="6.082">
+<failure message="expected:&lt;201&gt; but was:&lt;401&gt;" type="java.lang.AssertionError"><![CDATA[Given I am authorized user..................................................passed
+Given A list of books are available.........................................passed
+When I add a book to my reading list........................................passed
+Then The book is added......................................................failed
+When I remove a book from my reading list...................................skipped
+Then The book is removed....................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected:<201> but was:<401>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepDefinitions.ApiSteps.bookIsAdded(ApiSteps.java:67)
+	at ✽.The book is added(file:///C:/d/My%20Data/inter/rohitbaseframework/src/test/resources/functionalTests/EndtoEnd.feature:9)
+]]></failure>
+</testcase>
+</testsuite>

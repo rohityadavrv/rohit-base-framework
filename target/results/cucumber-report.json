@@ -1,0 +1,106 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User generates token for Authorization",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4105000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am authorized user",
+            "match": {
+              "location": "stepDefinitions.ApiSteps.i_am_authorized_user()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T07:22:22.678Z",
+        "line": 6,
+        "name": "To test an authenticated user is able to add a book from book store and delete it later",
+        "description": "",
+        "id": "to-test-end-to-end-book-store-api;to-test-an-authenticated-user-is-able-to-add-a-book-from-book-store-and-delete-it-later",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 900000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "A list of books are available",
+            "match": {
+              "location": "stepDefinitions.ApiSteps.listOfBooksAreAvailable()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 906000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I add a book to my reading list",
+            "match": {
+              "location": "stepDefinitions.ApiSteps.addBookInList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c201\u003e but was:\u003c401\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat stepDefinitions.ApiSteps.bookIsAdded(ApiSteps.java:67)\r\n\tat ✽.The book is added(file:///C:/d/My%20Data/inter/rohitbaseframework/src/test/resources/functionalTests/EndtoEnd.feature:9)\r\n",
+              "duration": 17000000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "The book is added",
+            "match": {
+              "location": "stepDefinitions.ApiSteps.bookIsAdded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I remove a book from my reading list",
+            "match": {
+              "location": "stepDefinitions.ApiSteps.removeBookFromList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "The book is removed",
+            "match": {
+              "location": "stepDefinitions.ApiSteps.bookIsRemoved()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To test End to End Book Store API",
+    "description": "",
+    "id": "to-test-end-to-end-book-store-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/functionalTests/EndtoEnd.feature",
+    "tags": []
+  }
+]
